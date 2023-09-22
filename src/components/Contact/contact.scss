@@ -1,0 +1,78 @@
+:root {
+    --primaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 33%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 43%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.contact_main{
+    background: #000;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    form{
+        position: absolute;
+        border: 2px solid var(--primaryColor);
+        box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+        transition: .3s ease;
+        height:max-content;
+        width: 80%;
+        background: rgba(10, 84, 107, 0.307);
+        input{
+            margin: 10px;
+            padding: 3px 3px;
+        }
+        label{
+            margin-left: 20px;
+        }
+        .btn{
+            margin-top: 2rem;
+            margin-left: 35%;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+}
+@media screen and (min-width:920px) {
+    .contact_main{
+        form{
+            width: 60%;
+            height: max-content;
+            label{
+                margin-left: 25%;
+            }
+            .btn{
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        
+    }
+}
+// @media screen and (max-width:520px) {
+//     .contact_main{
+//         form{
+            
+//         }
+//     }
+// }
+
+@media screen and (max-width:520px) {
+    .contact_main{
+        form{
+            height: max-content;
+            width: max-content;
+        }
+        .btn{
+            margin-bottom: 1rem;
+        }
+    }
+}
